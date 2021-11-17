@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
 * {
   box-sizing: border-box;
@@ -9,7 +9,7 @@ html {
 }
 
 body {
-  font-family: "Lato", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   margin: 0;
   padding: 0;
 }
@@ -29,15 +29,13 @@ body {
   color: gray;
 }
 
-.btn-up{
+.btn-up {
   color: #fff;
   font-size: 1.1em;
   border: none;
   border-radius: 10px;
   background-color: blue;
-
 }
-
 /*****End of Scroll***/
 
 a {
@@ -49,6 +47,18 @@ header {
   width: 100%;
   left: 0;
   top: 0;
+  padding: 20px;
+}
+
+.nav-btn {
+  color: #fff;
+  cursor: pointer;
+}
+
+.f1 {
+  width: 25px;
+  border-top: 2px solid #42ffa7;
+  padding-top: 4px;
 }
 
 .logo {
@@ -62,18 +72,13 @@ header {
 }
 
 .main-header {
-  padding: 0 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.fas {
-  color: #fff;
-  font-size: 30px;
-}
-
 .navigation {
+  height: 0;
   overflow: hidden;
   transition: 0.6s;
 }
@@ -99,6 +104,7 @@ header {
 
 .show-navigation {
   height: 10rem;
+  margin-top: 8px;
   border-top: solid 2px #fff;
 }
 
@@ -137,10 +143,9 @@ header {
 .btn {
   background-color: #42ffa7;
   border: none;
-  border-radius: 20px;
-  padding: 12px 28px;
+  border-radius: 10px;
+  padding: 6px 12px;
   color: #fff;
-  text-transform: uppercase;
 }
 
 .home-line {
@@ -153,10 +158,24 @@ header {
 #about {
   display: flex;
   align-items: center;
+  background-color: #f5f5f5;
 }
 
 .about-box {
-  padding: 20px; /*This will be for mobile*/
+  padding:  80px 20px;
+}
+
+.about-h1 {
+  text-align: center;
+}
+
+.welcome {
+  color: #42ffa7;
+  font-size: 1.3em;
+}
+
+.cd {
+  padding-left: 120px;
 }
 
 .team-img {
@@ -164,18 +183,8 @@ header {
   height: auto;
 }
 
-.about-line {
-  border: 2px solid #4bd16f;
-  margin-top: 20px;
-}
-
-.about-item {
-  flex-basis: 31%;
-  padding: 8px;
-  margin-top: 25px;
-  background-color: #76d8dd;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  border-radius: 10px;
+.about-text {
+  margin: auto;
 }
 /** End of About **/
 
@@ -187,11 +196,12 @@ header {
 .tour-box {
   display: grid;
   grid-template-columns: 1fr;
-  grid-gap: 10px;
+  grid-gap: 40px;
 }
 
-.card {
-  padding: 10px;
+.our-cakes{
+  text-align: center;
+  font-size: 1.8em;
 }
 
 .team-img {
@@ -203,20 +213,36 @@ header {
 
 /** Contact **/
 #contact {
-  padding: 20px;
   background-color: #f3f3f3;
   color: #797979;
-  background-color: #303339;;
+  background-color: #303339;
 }
 
-.ready-to-order{
+.ready-to-order {
+  padding: 2px;
   text-align: center;
+  background-image: linear-gradient(
+    rgba(136, 31, 150, 0.5),
+    rgba(105, 41, 41, 0.5)
+  );
+}
+
+.abtn{
+  font-size: small;
 }
 
 .btn-find-out-f {
   background-color: #728fec;
+  margin-left: 10px;
 }
 
+.shop-visit {
+  padding-left: 20px;
+}
+
+.contact-group {
+  padding: 0px 20px 20px 20px;
+}
 .contact-item {
   flex: 1;
 }
@@ -224,6 +250,7 @@ header {
 .contact-left {
   text-align: right;
 }
+
 .contact-left > p {
   margin-right: 20px;
 }
@@ -284,8 +311,27 @@ footer {
     border: none;
   }
 
-  .fa-bars {
-    font-size: 0;
+  .btn {
+    background-color: #42ffa7;
+    border: none;
+    border-radius: 20px;
+    padding: 12px 28px;
+    color: #fff;
+    text-transform: uppercase;
+  }
+
+  .btn-find-out-f {
+    background-color: #728fec;
+    margin-left: 8px;
+  }
+
+  .about-box {
+    display: flex;
+    margin: auto 0px;
+  }
+
+  .f1 {
+    border: none;
   }
 
   .tour-box {
@@ -304,24 +350,13 @@ footer {
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-  .about-box {
-    padding: 20px; /*This will be for mobile*/
-    display: flex;
-    margin: auto 0px;
-  }
-
   .about-img-box {
     flex: 1;
-    padding: 20px;
   }
 
   .about-text {
     flex: 1;
-    padding: 20px;
-  }
-
-  .about-line {
-    margin-top: 0px;
+    padding-left: 20px;
   }
 
   .tour-box {
