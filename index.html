@@ -1,36 +1,29 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Cake Delicassy</title>
-    <!--have to this -->
+    <title>Creativity Enhanced</title>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="theme-color" content="" />
     <!--have to change theme color -->
-    <link rel="shortcut icon" href="" type="image/x-icon" />
+    <link rel="shortcut icon" href="images/logo.jpg" type="image/x-icon" />
     <!--have to this -->
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="images/arrow.svg" />
-
-    <meta
-      name="description"
-      content="Cake Delicassy is an innovative bakery with the mission to serve our nation with high-quality cakes. 
-      We are based in Pretoria where we are known by our customers for baking fresh, sweet lovely cakes."
-    />
-    <meta
-      name="keywords"
-      content="Cake bakery, Cake in Pretoria, Bakery in Pretoria, Cake Shop, Bakery Shop"
-    />
+    <!---
+<meta name="description" content="Study web development online and grow your freelance development business. Get clients, earn more 	    & be an in-demand freelancer with Kyle Prinsloo."/>
+	    <meta name="keywords" content="study web development online, web development courses, web design courses, study web developer courses online, learn to code, learn web development, study web development, web development courses online"/>
+-->
   </head>
   <body>
     <div class="scroll-btn">
       <button class="btn-up">^</button>
     </div>
-
+   
+    <!--New Header-->
     <header>
       <div class="main-header">
-        <div class="logo">Cake Delicassy</div>
+        <div class="logo"><img src="images/logo.jpg" alt="logo" /></div>
         <div class="nav-btn">
           <div class="cst-menu">
             <div class="f1"></div>
@@ -42,193 +35,198 @@
 
       <nav class="navigation">
         <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#tours">Cakes Gallery</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#banner">Home</a></li>
+          <li><a href="#home">About</a></li>
+          <li><a href="#classes">Classes</a></li>
+          <li><a href="#cakes">Cakes</a></li>
+          <li><a href="#contact">Contact Us</a></li>
         </ul>
       </nav>
     </header>
+    <!--End Of Header-->
+
+    <section id="banner">
+      <div class="banner-box">
+        <h1>We bake lovey cakes.</h1>
+        <p class="middle-text">
+          We are known for delicious fresh cakes, come get some!!!
+        </p>
+        <a href="#contact" class="btn-call-to-action"> Contact Us </a>
+      </div>
+    </section>
 
     <section id="home">
-      <div class="home-box">
-        <p>Innovative bakery</p>
-        <hr class="home-line" />
-        <h1>High quality, tasty fresh cakes.</h1>
-        <div class="button-box">
-          <button class="btn btn-find-out">Contact Us</button>
-        </div>
+      <div id="home-content">
+        <h3 class="the-statement">We Are Creativity Enhanced</h3>
+        <p class="middle">
+          We specialize in baking creative, delicious cakes.
+We bake cakes that will bring a smile to your face by the way they taste and look. We have all the cakes for you, occasional cakes, cupcakes, Scones, 
+jam tarts, Chelsea's, and party packs. We also offer baking
+classes for kids and adults.
+        </p>
+        <p><span class="text-1">Baking</span><span class="text-1">Cake Decorations</span><span class="text-1">Baking Classes</span></p>
+      </div>
+    </section>
+    <section id="classes">
+      <div class="baking-lesson">
+        <h1>One On One Baking Lessons</h1>
+        <p>
+          We invite you to join us. You will learn how to bake, decorate
+          cakes, and also how to make the perfect buttercream frosting. Baking tools will be provided for training.
+        </p>
+          <a href="http://"  class="w-btn" target="_blank" rel="noopener noreferrer">
+            <img class="icon" src="images/whatsapp.svg" alt="whatsapp"><span class="w-txt">Let's Chat</span></a>
+        
+              <span class="class-call">Call +27 65 894 4068</span>
+
       </div>
     </section>
 
-    <section id="about">
-      <div class="about-box">
-        <div class="about-img-box">
-          <img class="team-img" src="images/about.PNG" alt="our-team" />
-        </div>
-        <div class="about-text">
-          <h1 class="about-h1">
-            <span class="welcome">Welcome To </span><br />
-            <span class="cd">Cake Delicassy</span>
-          </h1>
+    <section id="cakes">
+      <h3 class="cake-header">Cakes</h3>
+      <p class="cake-header">Some of our best cakes. Do you have any cake idea? we will like to bake it for you.</p>
 
-          <p>
-            Cake Delicassy is an innovative bakery with the mission to serve our
-            nation with high-quality cakes. We are based in Pretoria where we
-            are known by our customers for baking fresh, sweet lovely cakes.
-          </p>
-          <p>
-            We bake an enjoyable variety of cakes such as wedding cakes,
-            birthday cakes, bridal shower cakes, and more delicious cakes!!!
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <section id="tours">
-      <div>
-        <h1 class="our-cakes">Some of our lovely cakes</h1>
-      </div>
-      <div class="tour-box">
+      <!-- Cake Grid -->
+      <div class="cake-box">
         <div class="card x">
           <div class="about-img-box">
-            <img class="team-img" src="images/img1 (11).jpg" alt="our-team" />
+            <img class="cake-img" src="images/bd.jpg" alt="our-cake" />
           </div>
         </div>
 
         <div class="card">
           <div class="about-img-box">
-            <img class="team-img" src="images/img (3).jpg" alt="our-team" />
+            <img class="cake-img" src="images/kiddies.jpg" alt="our-cake" />
           </div>
         </div>
 
         <div class="card x">
           <div class="about-img-box">
-            <img class="team-img" src="images/img (2).jpg" alt="our-team" />
+            <img class="cake-img" src="images/kiddiesa.jpg" alt="our-cake" />
           </div>
         </div>
 
         <div class="card">
           <div class="about-img-box">
-            <img class="team-img" src="images/img1 (13).jpg" alt="our-team" />
+            <img class="cake-img" src="images/graduation.jpg" alt="our-cake" />
           </div>
         </div>
 
         <div class="card x">
           <div class="about-img-box">
-            <img class="team-img" src="images/img1 (2).jpg" alt="our-team" />
+            <img class="cake-img" src="images/graduationa.jpg" alt="our-cake" />
           </div>
         </div>
 
         <div class="card">
           <div class="about-img-box">
-            <img class="team-img" src="images/img1 (3).jpg" alt="our-team" />
+            <img class="cake-img" src="images/birthday.jpg" alt="our-cake" />
           </div>
         </div>
         <div class="card">
           <div class="about-img-box">
-            <img class="team-img" src="images/img1 (4).jpg" alt="our-team" />
+            <img class="cake-img" src="images/wedding (2).jpg" alt="our-cake" />
           </div>
         </div>
 
         <div class="card">
           <div class="about-img-box">
-            <img class="team-img" src="images/img1 (5).jpg" alt="our-team" />
+            <img class="cake-img" src="images/weddinga.jpg" alt="our-cake" />
           </div>
         </div>
         <div class="card">
           <div class="about-img-box">
-            <img class="team-img" src="images/img1 (9).jpg" alt="our-team" />
+            <img class="cake-img" src="images/babyshower.jpg" alt="our-cake" />
           </div>
         </div>
         <div class="card">
           <div class="about-img-box">
-            <img class="team-img" src="images/img1 (6).jpg" alt="our-team" />
+            <img class="cake-img" src="images/holly.jpg" alt="our-cake" />
           </div>
         </div>
-        <div class="card">
-          <div class="about-img-box">
-            <img class="team-img" src="images/img1 (1).jpg" alt="our-team" />
-          </div>
-        </div>
+        
       </div>
+      <!-- End Of Cake Grid -->
     </section>
 
     <section id="contact">
-      <div class="ready-to-order">
-        <h3>
-          Ready To Order
-          <a
-            class="btn abtn btn-find-out"
-            href="https://api.whatsapp.com/send?phone=%2B27723844727&fbclid=IwAR2wDXKnr3t6UtkwUaiIyZ5p4L8j8mezihWN8jAhaWcAPzHQ-QYtYOA_JuY"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            WhatsApp
-          </a>
-          <a
-            class="btn abtn btn-find-out-f"
-            href="https://www.facebook.com/cakedelicassy"
-            target="_blank"
-            rel="noopener noreferrer"
-            >Facebook</a
-          >
-        </h3>
-      </div>
+      <h3 class="contact-header">Our Contacts</h3>
+      <p class="contact-header">
+        Feel free to order, get price or ask anything.
+      </p>
 
-      <h1 class="shop-visit">Visit our shop</h1>
       <div class="contact-group">
-        <div class="contact-item contact-right">
-          <h3>Openning Time</h3>
-          <p>Mon 09:00 AM - 17:00 PM</p>
-          <p>Tue 09:00 AM - 17:00 PM</p>
-          <p>Wed 09:00 AM - 17:00 PM</p>
-          <p>Thu 09:00 AM - 17:00 PM</p>
-          <p>Fri 09:00 AM - 17:00 PM</p>
-          <p>Sat 09:00 AM - 17:00 PM</p>
-          <p>Sun Closed</p>
+        <div class="contact-item">
+          <h3>Opening Hours</h3>
+          <p>Tuesday - Friday : 09:00 - 17:00</p>
+          <p>Saturday :09:00 - 13:00</p>
+          <p>Sunday - Monday Closed</p>
         </div>
-        <div class="contact-item contact-left">
-          <h3>Get In Touch</h3>
-          <p>
-            <strong>Location:</strong><br />Shop No 6 Corner Gerrit Mritz and
-            West streets,<br />0182 Pretoria
-          </p>
-          <p><strong>Phone Numbers:</strong><br />072 384 4727</p>
-          <p><strong>Facebook:</strong><br />cakedelicassy</p>
+
+        <div class="contact-item">
+          <div class="contact-form-box">
+            <h3>Write Us Message</h3>
+            <form action="" id="contactForm" class="contact-form">
+              <input type="text" id="name" placeholder="Enter fullnames" />
+              <input
+                type="email"
+                id="email"
+                placeholder="Enter email address"
+              />
+              <div class="textarea">
+                <textarea name="" cols="10" rows="2" placeholder="Write your message">
+</textarea>
+              </div>
+              <div>
+                <button class="btn-submit">Send a message</button>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <h3>Our Contacts</h3>
+          <p>Shop 3 Evans Center Capital Park</br>Pretoria</p>
+          <p>+27 65 894 4068</p>
+          <p>info@creativityenhanced.co.za</p>
+          <p><img  class="icon" src="images/facebook.svg" alt="facebook"></p>
+          <p><img class="icon" src="images/whatsapp.svg" alt="whatsapp"></p>
         </div>
       </div>
-    </section>
-    <footer>
-      <p>&copy;copyrights Cake Delicassy</p>
-    </footer>
+      <div class="map-container">
+       <iframe class="map" src="https://maps.google.com/maps?q=Creativity%20Enhanced,%20325%20Paul%20Kruger%20St,%20Capital%20Park,%20Pretoria,%200084&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+      </div>
+       </section>
+       <footer>
+        <p>&copy;copyrights Creativity Enhanced</p>
+      </footer>
 
-    <script>
-      const scrollBtn = document.querySelector(".scroll-btn");
-
-      window.addEventListener("scroll", () => {
-        if (
-          document.body.scrollTop > 20 ||
-          document.documentElement.scrollTop > 20
-        ) {
-          scrollBtn.style.display = "block";
-        } else {
-          scrollBtn.style.display = "none";
-        }
-      });
-      scrollBtn.addEventListener("click", () => {
-        window.scroll({
-          top: 0,
-          behavior: "smooth",
+      <script>
+        const scrollBtn = document.querySelector(".scroll-btn");
+  
+        window.addEventListener("scroll", () => {
+          if (
+            document.body.scrollTop > 20 ||
+            document.documentElement.scrollTop > 20
+          ) {
+            scrollBtn.style.display = "block";
+          } else {
+            scrollBtn.style.display = "none";
+          }
         });
-      });
-
-      document.querySelector(".nav-btn").addEventListener("click", () => {
-        document
-          .querySelector(".navigation")
-          .classList.toggle("show-navigation");
-        console.log("this has bee clicked");
-      });
-    </script>
+        scrollBtn.addEventListener("click", () => {
+          window.scroll({
+            top: 0,
+            behavior: "smooth",
+          });
+        });
+  
+        document.querySelector(".nav-btn").addEventListener("click", () => {
+          document
+            .querySelector(".navigation")
+            .classList.toggle("show-navigation");
+          console.log("this has bee clicked");
+        });
+      </script>
   </body>
 </html>

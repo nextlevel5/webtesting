@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Arima+Madurai&family=Cookie&display=swap");
 
 * {
   box-sizing: border-box;
@@ -9,40 +9,19 @@ html {
 }
 
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Arima Madurai", cursive;
   margin: 0;
   padding: 0;
 }
 
-/****Scroll*****/
-
-.scroll-btn {
-  font-size: 3rem;
-  cursor: pointer;
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  display: none;
-}
-
-.scroll-btn:hover {
-  color: gray;
-}
-
-.btn-up {
-  color: #fff;
-  font-size: 1.1em;
-  border: none;
-  border-radius: 10px;
-  background-color: blue;
-}
-/*****End of Scroll***/
-
 a {
   text-decoration: none;
+  color: #fff;
 }
 
+/* Header */
 header {
+  background-color: #fff;
   position: absolute;
   width: 100%;
   left: 0;
@@ -57,14 +36,8 @@ header {
 
 .f1 {
   width: 25px;
-  border-top: 2px solid #42ffa7;
+  border-top: 2px solid  #c8924d;
   padding-top: 4px;
-}
-
-.logo {
-  color: #42ffa7;
-  font-weight: bolder;
-  font-size: larger;
 }
 
 .logo > img {
@@ -96,7 +69,7 @@ header {
 }
 
 .navigation a {
-  color: white;
+  color:  #c8924d;
   text-decoration: none;
   border-radius: 0px;
   width: 100%;
@@ -112,153 +85,213 @@ header {
   text-decoration: underline 0.2em;
 }
 
-/**Home **/
-#home {
+/* Banner */
+#banner {
   background-color: #81f0a3;
   background-image: linear-gradient(
       rgba(12, 12, 12, 0.5),
       rgba(15, 15, 15, 0.5)
     ),
-    url("../images/banner.jpg");
+    url("../images/bgimage.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #fff;
-  font-size: 1.4em;
-}
-
-.home-box {
-  padding-top: 40px;
-  text-align: center;
-}
-
-.banner-box > p {
-  padding: 20px 0px;
-}
-
-.btn {
-  background-color: #42ffa7;
-  border: none;
-  border-radius: 10px;
-  padding: 6px 12px;
-  color: #fff;
-}
-
-.home-line {
-  border: 2px solid #42ffa7;
-  margin-top: -5px;
-  width: 180px;
-}
-
-/** About **/
-#about {
+  min-height: 100vh;
   display: flex;
   align-items: center;
-  background-color: #f5f5f5;
-}
-
-.about-box {
-  padding:  80px 20px;
-}
-
-.about-h1 {
-  text-align: center;
-}
-
-.welcome {
-  color: #42ffa7;
+  padding: 20px;
   font-size: 1.3em;
 }
 
-.cd {
-  padding-left: 120px;
+.banner-box {
+  max-width: 490px;
 }
 
-.team-img {
-  width: 100%;
-  height: auto;
+#banner h1,
+#banner p {
+  color: #ffffff;
 }
 
-.about-text {
-  margin: auto;
+.middle-text {
+  margin: 40px 0px 55px 0px;
 }
-/** End of About **/
 
-/*** Tours ***/
-#tours {
+.btn-call-to-action {
+  background-color: #c8924d;
+  border: none;
+  color: #fff;
+  padding: 4px 18px;
+  border-radius: 20px;
+  font-family: "Arima Madurai", cursive;
+}
+
+/* Home */
+#home {
+  display: flex;
+  text-align: center;
+  min-height: 80vh;
   padding: 20px;
 }
 
-.tour-box {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-gap: 40px;
+#home-content {
+  margin: auto;
+  max-width: 600px;
 }
 
-.our-cakes{
+.the-statement {
+  color: #c8924d;
+  font-size: 1.5em;
+}
+
+.middle {
+  margin-top: 35px;
+  margin-bottom: 40px;
+}
+
+.text-1 {
+  color: #c8924d;
+  margin: 0px 9px;
+  font-size: 1.3em;
+}
+
+/* Classes */
+#classes {
+  background-color: #c8924d;
+  min-height: 50vh;
+  text-align: center;
+  display: flex;
+  padding: 20px;
+}
+
+.baking-lesson {
+  margin: auto;
+  max-width: 600px;
+}
+
+.w-btn {
+  background-color: #25d366;
+  padding: 18px 10px 0px;
+  border-radius: 20px;
+}
+
+.w-txt {
+  position: relative;
+  top: -8px;
+}
+
+.class-call {
+  position: relative;
+  top: -8px;
+  margin-left: 20px;
+}
+
+/* cakes */
+#cakes {
+}
+
+.cakes-group {
+  padding: 20px;
+}
+
+.cake-header {
+  padding: 0px 20px;
+  text-align: center;
+}
+
+.cakes-item {
+  width: 250px;
+  margin-top: 25px;
+}
+
+/* Cakes Grid */
+#cake {
+  padding: 20px;
+}
+
+.cake-box {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+  padding: 20px;
+}
+
+.our-cakes {
   text-align: center;
   font-size: 1.8em;
 }
 
-.team-img {
+.cake-img {
   width: 100%;
   height: auto;
+  border-radius: 6px;
 }
 
-/** End of Tours **/
+/* End of Cake Grid */
 
-/** Contact **/
+/* Contacts */
 #contact {
-  background-color: #f3f3f3;
-  color: #797979;
-  background-color: #303339;
-}
-
-.ready-to-order {
-  padding: 2px;
-  text-align: center;
-  background-image: linear-gradient(
-    rgba(136, 31, 150, 0.5),
-    rgba(105, 41, 41, 0.5)
-  );
-}
-
-.abtn{
-  font-size: small;
-}
-
-.btn-find-out-f {
-  background-color: #728fec;
-  margin-left: 10px;
-}
-
-.shop-visit {
-  padding-left: 20px;
+  background-color: rgb(226, 144, 226);
+  padding-top: 10px;
 }
 
 .contact-group {
-  padding: 0px 20px 20px 20px;
+  padding: 20px;
 }
+
+.contact-header {
+  text-align: center;
+  padding: 0px 20px;
+}
+
 .contact-item {
-  flex: 1;
+  flex-basis: 31%;
+  padding: 8px;
+  margin-top: 10px;
+  border-radius: 10px;
 }
 
-.contact-left {
-  text-align: right;
+.contact-item h3 {
+  margin: 0;
 }
 
-.contact-left > p {
-  margin-right: 20px;
+label {
+  display: block;
+  margin: 15px 0px 5px;
 }
 
-.contact-right > p {
-  margin-left: 20px;
+input[type],
+textarea {
+  line-height: 34px;
+  width: 100%;
+  border-radius: 4px;
+  border: 2px solid rgb(235, 235, 235);
+  outline: #c3cfcf;
+  margin-top: 14px;
+  font-family: "Arima Madurai", cursive;
 }
-/** End of Contact **/
+
+.btn-submit {
+  border: none;
+  padding: 12px 28px;
+  border-radius: 3px;
+  margin: 15px auto;
+  font-family: "Arima Madurai", cursive;
+}
+
+.icon {
+  font-size: 1.2em;
+  width: 30px;
+  border-radius: 2px;
+}
+
+.map {
+  width: 100%;
+  height: 350px;
+  padding: 20px;
+  padding-top: 0px;
+}
+
+/* Footer */
 
 footer {
   background-color: rgb(206, 206, 206);
@@ -267,21 +300,33 @@ footer {
   padding: 1px;
 }
 
-@media only screen and (max-width: 600px) {
-  .tour-box {
-    grid-template-columns: 1fr 1fr;
-  }
+/* scroll */
+
+.scroll-btn {
+  font-size: 3rem;
+  cursor: pointer;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none;
 }
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-  .tour-box {
-    grid-template-columns: 1fr 1fr;
-  }
+.scroll-btn:hover {
+  color: gray;
 }
 
-/* Medium devices (landscape tablets, 768px and up) */
+.btn-up {
+  color: #fff;
+  font-size: 1.1em;
+  border: none;
+  border-radius: 10px;
+  background-color: rgb(174, 174, 184);
+}
+
+/* 768px and larger */
 @media only screen and (min-width: 768px) {
+
+  /* New Header */
   header {
     padding: 0 20px;
     display: flex;
@@ -311,59 +356,27 @@ footer {
     border: none;
   }
 
-  .btn {
-    background-color: #42ffa7;
-    border: none;
-    border-radius: 20px;
-    padding: 12px 28px;
-    color: #fff;
-    text-transform: uppercase;
-  }
-
-  .btn-find-out-f {
-    background-color: #728fec;
-    margin-left: 8px;
-  }
-
-  .about-box {
-    display: flex;
-    margin: auto 0px;
-  }
-
   .f1 {
     border: none;
   }
 
-  .tour-box {
-    grid-template-columns: 1fr 1fr 1fr;
+  #banner {
+    font-size: 1.5em;
+  }
+
+  .cakes-group {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .cake-box {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   }
 
   .contact-group {
     display: flex;
     justify-content: space-between;
   }
-
-  .contact-item {
-    flex: 1;
-  }
 }
 
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-  .about-img-box {
-    flex: 1;
-  }
-
-  .about-text {
-    flex: 1;
-    padding-left: 20px;
-  }
-
-  .tour-box {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-  }
-}
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-}
