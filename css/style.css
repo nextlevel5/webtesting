@@ -99,7 +99,7 @@ header {
   min-height: 100vh;
   display: flex;
   align-items: center;
-  padding: 20px;
+  padding: 10px;
   font-size: 1.3em;
 }
 
@@ -130,7 +130,7 @@ header {
   display: flex;
   text-align: center;
   min-height: 80vh;
-  padding: 20px;
+  padding: 10px;
 }
 
 #home-content {
@@ -160,7 +160,7 @@ header {
   min-height: 50vh;
   text-align: center;
   display: flex;
-  padding: 20px;
+  padding: 10px;
 }
 
 .baking-lesson {
@@ -205,14 +205,14 @@ header {
 
 /* Cakes Grid */
 #cake {
-  padding: 20px;
+  padding: 10px;
 }
 
 .cake-box {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 20px;
-  padding: 20px;
+  grid-gap: 10px;
+  padding: 10px;
 }
 
 .our-cakes {
@@ -235,7 +235,7 @@ header {
 }
 
 .contact-group {
-  padding: 20px;
+  padding: 4px;
 }
 
 .contact-header {
@@ -245,7 +245,7 @@ header {
 
 .contact-item {
   flex-basis: 31%;
-  padding: 8px;
+  padding: 0px 8px;
   margin-top: 10px;
   border-radius: 10px;
 }
@@ -287,7 +287,7 @@ textarea {
 .map {
   width: 100%;
   height: 350px;
-  padding: 20px;
+  padding: 10px;
   padding-top: 0px;
 }
 
